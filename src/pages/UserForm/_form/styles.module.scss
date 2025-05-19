@@ -1,0 +1,49 @@
+.root {
+  display: grid;
+  grid-template: auto / 1fr 1fr;
+  gap: 0 2rem;
+}
+
+.title {
+  margin: 2rem 0;
+}
+
+.field {
+  color: var(--color-sec);
+  font-size: 1.6rem;
+  font-weight: 600;
+
+  input {
+    margin: .8rem 0 1.6rem;
+    padding: 1.6rem 2rem;
+    width: 100%;
+    border-radius: var(--border-radius);
+    border: var(--border);
+    color: var(--color);
+    background-color: var(--color-bg);
+    font-weight: 600;
+
+    &::placeholder {
+      color: var(--color-tert);
+    }
+  }
+}
+
+.buttons {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
+  gap: 1.6rem;
+  margin-top: 3rem;
+
+  &>*:nth-child(odd) {
+    justify-self: end;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .root {
+    grid-template: auto / 1fr;
+  }
+}

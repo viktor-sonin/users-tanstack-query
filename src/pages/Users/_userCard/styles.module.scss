@@ -1,0 +1,34 @@
+.userCard {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  color: var(--color);
+  transition: background-color, transform .25s, .25s;
+  cursor: pointer;
+
+  p {
+    line-height: 1.25;
+  }
+
+  &:hover,
+  &:has(:focus-visible) {
+    background-color: var(--color-card-hover);
+  }
+
+  &:active {
+    background-color: var(--color-card-active);
+  }
+}
+
+.link {
+  padding: 2rem;
+  height: 100%;
+}
+
+@media screen and (min-width: 767px) {
+
+  .userCard:hover,
+  .userCard:has(:focus-visible) {
+    transform: scale(1.05);
+  }
+}

@@ -1,0 +1,14 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: 20rem;
+  min-width: 30rem;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--color-overlay);
+}

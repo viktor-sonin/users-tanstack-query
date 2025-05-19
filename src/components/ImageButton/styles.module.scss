@@ -1,0 +1,45 @@
+.button {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  padding: .8rem;
+  width: fit-content;
+  border-radius: 99rem;
+  border: var(--border);
+  color: var(--color-btn);
+  background-color: var(--color-btn-bg);
+  box-shadow: var(--box-shadow);
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition: color, background-color .15s, .15s;
+
+  img,
+  svg {
+    height: 2.4rem;
+  }
+
+  &:hover {
+    background-color: var(--color-btn-bg-hover);
+  }
+
+  &:active {
+    color: var(--color-btn-active);
+    background-color: var(--color-btn-bg-active);
+  }
+}
+
+.button.delete {
+  background-color: var(--color-btn-delete-bg);
+
+  &:hover {
+    background-color: var(--color-btn-delete-bg-hover);
+  }
+
+  &:active {
+    background-color: var(--color-btn-bg-active);
+  }
+}
+
+.text:not(:empty) {
+  margin: 0 .8rem .2rem;
+}

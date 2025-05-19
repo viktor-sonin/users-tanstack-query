@@ -1,0 +1,21 @@
+.queryWrapper {
+  margin: 4rem auto;
+  max-width: 90rem;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 4rem;
+  margin: 20rem auto;
+}
+
+
+@media screen and (max-width: 767px) {
+  .queryWrapper {
+    margin: auto;
+  }
+}
